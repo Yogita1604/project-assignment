@@ -1,0 +1,14 @@
+.homepage {
+  padding: 10px;
+}
+.text-align-center {
+  text-align: center;
+}
+.recent-customer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.all-customer-sec {
+  text-align: center;
+}

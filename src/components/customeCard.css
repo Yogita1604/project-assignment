@@ -1,0 +1,46 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.customer-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-name {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.customer-email {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.customer-details p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.customer-details strong {
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .customer-card {
+    padding: 15px;
+  }
+  .customer-name {
+    font-size: 1.2rem;
+  }
+}
