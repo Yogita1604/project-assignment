@@ -5,6 +5,7 @@ describe("calculate rewards points", () => {
     const points = calculateRewardPoints(120);
     expect(points).toBe(90);
   });
+
   test("should return the correct reward points for $75", () => {
     const points = calculateRewardPoints(75);
     expect(points).toBe(25);

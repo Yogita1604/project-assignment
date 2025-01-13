@@ -7,7 +7,6 @@ export const calculateRewardPoints = (amount) => {
   if (amount > 50) {
     points += amount - 50;
   }
-  // console.log("amount", amount, "points", points);
   return points;
 };
 
