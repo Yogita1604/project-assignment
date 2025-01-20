@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import CustomerCard from "./customerCard";
 const CustomerList = ({ customers, loading }) => {
   if (loading) {
@@ -25,6 +26,10 @@ const CustomerList = ({ customers, loading }) => {
       )}
     </div>
   );
+};
+CustomerList.propTypes = {
+  customers: PropTypes.array,
+  loading: PropTypes.bool,
 };
 
 export default CustomerList;

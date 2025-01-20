@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useParams, useNavigate } from "react-router-dom";
 import { calculateRewardPoints } from "../utils/calculateRewardsPoint";
 import { FaArrowLeftLong } from "react-icons/fa6";
@@ -59,6 +60,10 @@ const CustomerDetails = ({ customers }) => {
       )}
     </div>
   );
+};
+
+CustomerDetails.propTypes = {
+  customers: PropTypes.array,
 };
 
 export default CustomerDetails;
